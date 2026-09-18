@@ -33,3 +33,16 @@ flowchart LR
     O --> E[Email Alert<br/>Gmail]
     H --> OUT[Chat Response to User]
     E --> OUT
+
+## The Business Problem
+
+Retail and footwear operations depend on coordination across four functions that rarely talk to each other in real time: demand forecasting, supplier management, inventory allocation, and production/distribution flow. In most mid-size retail organizations, this coordination happens manually — through spreadsheets, email threads, and whoever happens to answer a Slack message first. That creates concrete, costly problems:
+
+- **Slow reaction to disruptions.** When a supplier pushes back a shipment or a demand forecast shifts, someone has to notice it, figure out who else it affects (inventory? production flow? other suppliers?), and manually loop them in. That lag translates directly into stockouts, excess inventory, or missed sales windows.
+- **Fragmented, inconsistent answers.** Ask the inventory team and the supply chain team the same operational question and you may get two different answers, because each is working from its own view of the data with no shared source of truth.
+- **No accessible entry point for non-technical stakeholders.** A store manager or business analyst who wants to know "what does this forecast change mean for us?" has no way to ask that directly — they have to know which spreadsheet to open or which specialist to email, and then wait.
+- **Reactive instead of proactive operations.** Without a system watching for cross-functional impact, issues typically surface only after they've already caused a problem (a stockout, a missed shipment) rather than being flagged the moment the triggering event occurs.
+
+The business cost of this isn't abstract: it shows up as lost sales from stockouts, working capital tied up in excess inventory, and slower decision cycles that compound during periods of volatility (holiday demand spikes, supplier disruptions, etc.).
+
+**This project prototypes a different operating model:** instead of routing questions to people, route them to a coordinated team of AI agents — each grounded in the real data of one operational domain — that can answer instantly, reason across domains when needed, and proactively escalate what matters. It replaces "who do I ask?" with "just ask."
